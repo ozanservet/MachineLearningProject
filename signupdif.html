@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+      <link rel="stylesheet" type="text/css" href="css/main.css"/>
+      <!--son yazılan css dosyası bir öncekinden daha baskın olur-->
+      
+      <title>Program Recommendation System</title>
+      
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+buttonLogin {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+buttonLogin:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainerLogin {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.containerLogin {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+      
+  </head>
+  <body>
+    <div class="container">
+        
+        <nav>
+            <ul class="nav nav-tabs ">
+                <li class="nav-item"><a href="signup.html" class="nav-link">Sign up</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+        <br />
+        <h2>Welcome to Program Recommendation System</h2>
+        <br />
+        <div class="col-lg-6">
+            
+            <form action="insertUser.php" method="post">    
+               <div class="containerLogin">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+              </div>
+
+              <div class="containerLogin" style="background-color:#f1f1f1">
+                <input type="submit" name="submit" value="Sign Up" class="btn btn-primary">
+                  <p><font color="red">Try different username please!</font></p>
+                </div>
+            </form>
+            <br/>
+        <br />
+        <div class="col-lg-6">
+        </div>
+    </div>
+    </div> 
+      <!-- bootstrap materials -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+  </body>
+</html>
