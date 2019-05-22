@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Dropdown list will work with this scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+      <link rel="stylesheet" type="text/css" href="css/main.css"/>
+      <!--son yazılan css dosyası bir öncekinden daha baskın olur-->
+
+      <title>Program Recommendation System</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav>
+            <ul class="nav nav-tabs ">
+              <li class="nav-item"><a href="signup.html" class="nav-link">Sign up</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+        <br/><br />
+        <center><p>This website predicts your profession accourding to grades. Please enter all your grades to system to learn most accurate prediction.</p></center>
+    </div>
+
+      <!-- dropdown shows selected material -->
+      <script>
+        $('.dropdown-menu li a').click(function(){
+            $(this).parents(".dropdown").find('.btn').html($(this).text();
+              $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+        });
+      </script>
+  </body>
+</html>

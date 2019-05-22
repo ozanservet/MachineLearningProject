@@ -1,0 +1,35 @@
+drop table if exists enrolledtable;
+
+drop table if exists coursetable;
+
+drop table if exists studenttable;
+
+
+CREATE TABLE studenttable(
+nickname VARCHAR(45),
+pass VARCHAR(60),
+feedback VARCHAR(45),
+PRIMARY KEY (nickname)
+);
+
+
+CREATE TABLE coursetable(
+subject VARCHAR(45),
+course VARCHAR(45),
+cname VARCHAR(45),
+credit INT,
+PRIMARY KEY (subject, course),
+key k1 (course,cname,credit)
+);
+
+
+CREATE TABLE enrolledtable (
+nickname VARCHAR(45),
+subject VARCHAR(45),
+course VARCHAR(45),
+grade REAL,
+PRIMARY KEY (nickname, subject, course),
+FOREIGN KEY (nickname) REFERENCES studenttable (nickname),
+FOREIGN KEY (subject) REFERENCES coursetable (subject),
+FOREIGN KEY (course) REFERENCES coursetable (course)
+);
